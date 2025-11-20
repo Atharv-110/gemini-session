@@ -34,3 +34,80 @@ Inside Google AI Studio:
 - Click on "Create Key" button
 - Click on first column under key
 - Click Copy or download it securely
+
+# Sample Codes
+### For people who writes code in JavaScript (Node.js)
+```bash
+npm install @google/genai
+```
+```javascript
+// index.js
+import { GoogleGenAI } from "@google/genai";
+import dotenv from "dotenv";
+dotenv.config();
+
+const ai = new GoogleGenAI({
+  apiKey: process.env.GEMINI_API_KEY,
+});
+
+async function run() {
+  const response = await ai.models.generateContent({
+    model: "gemini-2.5-flash",
+    contents: [
+      { role: "user", parts: [{ text: "Explain how LLMs work in simple words." }] }
+    ],
+  });
+  console.log(response.text);
+}
+
+run().catch(err => {
+  console.error("Error generating content:", err);
+});
+```
+
+### For people who writes code in Python
+```bash
+pip install google-genai python-dotenv
+```
+```python
+from dotenv import load_dotenv
+from google import genai
+client = genai.Client()
+
+response = client.models.generate_content(
+    model="gemini-2.5-flash",
+    contents="How does AI work?"
+)
+print(response.text)
+```
+
+### For people who writes code in Java
+```xml
+<dependency>
+  <groupId>com.google.genai</groupId>
+  <artifactId>google-genai</artifactId>
+  <version>1.0.0</version>
+</dependency>
+```
+```java
+import com.google.genai.Client;
+import com.google.genai.types.GenerateContentResponse;
+
+public class GenerateContentWithTextInput {
+  public static void main(String[] args) {
+
+    Client client = new Client();
+
+    GenerateContentResponse response =
+        client.models.generateContent("gemini-2.5-flash", "How does AI work?", null);
+
+    System.out.println(response.text());
+  }
+}
+```
+### 🔗 Visit: [Detailed Hackathon Guide](https://gist.github.com/dynamicwebpaige/dcecdf3a3c4bcd9b3dac992bdb647593)
+
+# Project Examples
+1. [Leetburns](https://leetburns.vercel.app/) (Already Developed)
+2. Resume RAG Bot
+3. Notes RAG Chat Bot
