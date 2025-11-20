@@ -105,10 +105,12 @@ public class GenerateContentWithTextInput {
   }
 }
 ```
-### 🔗 Visit: [Detailed Hackathon Guide](https://gist.github.com/dynamicwebpaige/dcecdf3a3c4bcd9b3dac992bdb647593)
-
 # Project Examples
 1. Leetburns 🔥 : [Deployment](https://leetburns.vercel.app/) | [Repository](https://github.com/atharv-110/leetburns)
 2. Resume RAG Bot
 3. Notes RAG Chat Bot
 4. AI Code Reviewer
+
+# External Links 🔗
+1. [Detailed Hackathon Guide](https://gist.github.com/dynamicwebpaige/dcecdf3a3c4bcd9b3dac992bdb647593)
+2. [Official Google's Documentation](https://ai.google.dev/gemini-api/docs/)
