@@ -108,6 +108,6 @@ public class GenerateContentWithTextInput {
 ### 🔗 Visit: [Detailed Hackathon Guide](https://gist.github.com/dynamicwebpaige/dcecdf3a3c4bcd9b3dac992bdb647593)
 
 # Project Examples
-1. [Leetburns](https://leetburns.vercel.app/) (Already Developed)
+1. Leetburns 🔥 : [Deployment](https://leetburns.vercel.app/) | [Repository](https://github.com/atharv-110/leetburns)
 2. Resume RAG Bot
 3. Notes RAG Chat Bot
